@@ -2,7 +2,7 @@ package com.green.day6.ch4;
 
 import java.util.Scanner;
 
-public class FlowEx28 {
+public class FlowEx28Result {
     public static void main(String[] args) {
         /*
         1~100 사이의 정수를 입력하세요 >>
@@ -11,7 +11,6 @@ public class FlowEx28 {
         맞출떄 까지 반복
          */
 
-        int input = 0;
         int answer = (int) (Math.random() * 100) + 1;
         System.out.println(answer);
 
@@ -19,17 +18,10 @@ public class FlowEx28 {
 
         while (true) {
             System.out.print("1~100사이의 정수를 입력하세요 >> ");
-            input = scan.nextInt();
-            if (input > answer) {
-                System.out.println("Down");
-            } else if (input < answer) {
-                System.out.println("up");
-            } else {
-                break;
-            }
+            final int input = scan.nextInt();
+            if (input == answer) { break; }
+            System.out.println(input < answer ? "UP" : "Down");
         }
-
-                System.out.println("끝!!");
-
+        System.out.println("끝!!");
     }
 }
