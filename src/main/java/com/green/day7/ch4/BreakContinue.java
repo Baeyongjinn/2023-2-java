@@ -12,7 +12,6 @@ public class BreakContinue {
         }
         System.out.println("--------------");
         for (int i = 0; i < 10; i++) {
-            System.out.println(i);
             if (i % 2 == 0) {  continue; }                       //continue :  skip 할때 씀
             System.out.println(i);
         }
