@@ -1,5 +1,6 @@
 package com.green.day7.ch4;
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class FlowEx32Result {
@@ -46,7 +47,8 @@ public class FlowEx32Result {
 
             if (choice == 0) {
                 break;
-            } else if (choice < 1 || choice > 3) {
+            } else if (!(choice == 1 || choice == 2 || choice == 3)) {
+                //} else if (choice < 1 || choice > 3) {
                 System.out.println("메뉴를 잘못 선택하셨습니다.");
                 continue;
             }

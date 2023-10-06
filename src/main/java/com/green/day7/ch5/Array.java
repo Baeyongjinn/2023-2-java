@@ -17,5 +17,6 @@ public class Array {
         System.out.println("arr[3]: " + arr[3]);
 
         System.out.println("arr.length : " + arr.length);
+        System.out.println("arr.length : " + arr3.length);
     }
 }

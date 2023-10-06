@@ -6,7 +6,9 @@ public class BreakContinue3 {
         for (int i = 0; i < 5; i++) {
 
             for (int z = 10; z < 15; z++) {
-                if (z == 13) { break abc; }
+                if (z == 13) {
+                    break abc;
+                }
                 System.out.printf("i:%d - z:%d\n", i, z);
             }
         }
@@ -15,9 +17,23 @@ public class BreakContinue3 {
         def:
         for (int i = 0; i < 5; i++) {
             for (int z = 10; z < 15; z++) {
-                if (z == 13) { continue def; }
+                if (z == 13) {
+                    continue def;
+                }
                 System.out.printf("i:%d - z:%d\n", i, z);
             }
         }
+            System.out.println("----------------------");
+
+            for (int i = 0; i < 5; i++) {
+
+                for (int z = 10; z < 15; z++) {
+                    if (z == 13) {
+                        break;
+                    }
+                    System.out.printf("i:%d - z:%d\n", i, z);
+                }
+            }
+        }
     }
-}
+
