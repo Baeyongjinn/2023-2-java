@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayToStringMissionResult2 {
     public static void main(String[] args) {
         //for 문을 활용해 콘솔에 [5, 10, 7, 3] 출력 되도록 하시오.
-        int[] arr = {5, 10, 7, 3};
+        int[] arr = {5, 10, 7, 3, 100};
         System.out.println((Arrays.toString(arr)));
 
         System.out.println("(1)----------");
