@@ -12,7 +12,7 @@ public class ArrayEx19Result {
         };
         int korTotal = 0, engTotal = 0, mathTotal = 0;
 
-        System.out.println("번호 국어 영어 수학 총점 평균 ");
+        System.out.println(" 번호 국어 영어 수학 총점 평균 ");
         System.out.println("===============================");
 
         for (int i = 0; i < score.length; i++) {
@@ -31,8 +31,8 @@ public class ArrayEx19Result {
             avg =sum/(float)score[i].length; //평균계산
             System.out.printf("%5d %5.1f%n",sum,avg);
         }
-        System.out.println("=======================================");
-        System.out.printf("총점:%3d %4d %4d%n",korTotal,engTotal,mathTotal);
+        System.out.println("===============================");
+        System.out.printf("총점: %3d %4d %4d%n",korTotal,engTotal,mathTotal);
 
     }
 
