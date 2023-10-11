@@ -13,7 +13,7 @@ public class ArrayEx19 {
         int[] sumArr = new int[score[0].length];
 
         System.out.println("번호 국어 영어 수학 총점 평균");
-        System.out.println("-----------------------------------------");
+        System.out.println("=========================================");
         for (int i = 0; i < score.length; i++) {
             System.out.printf("%d", i + 1);
             int sum = 0;
@@ -26,7 +26,7 @@ public class ArrayEx19 {
             float avg = (float) sum / score[i].length;
             System.out.printf("\t%d\t%.1f\n", sum, avg);
         }
-        System.out.println("-----------------------------------------");
+        System.out.println("=========================================");
         System.out.print("총점");
         for(int val : sumArr) {
             System.out.printf(" %d",val);

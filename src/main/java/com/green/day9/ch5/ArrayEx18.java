@@ -4,10 +4,10 @@ public class ArrayEx18 {
     public static void main(String[] args) {
         int sum = 0;
         int[][] score = {
-                  { 101, 102, 103 }
-                , { 21, 22, 23 }
-                , { 31, 32, 33 }
-                , { 41, 42, 43 }
+                {101, 102, 103}
+                , {21, 22, 23}
+                , {31, 32, 33}
+                , {41, 42, 43}
         };
 
         /*
@@ -29,6 +29,10 @@ public class ArrayEx18 {
         }
         System.out.println(sum);
 
+
     }
 }
+
+
+
 

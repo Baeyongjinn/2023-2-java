@@ -29,7 +29,6 @@ public class ArrayEx18Result {
             }
         }
         //향상된 for문을 이용하여 sum의 값을 구하고싶다
-        sum = 0;
         for (int[] arr : score) {
 
             for (int val : arr) {

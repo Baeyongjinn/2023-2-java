@@ -15,17 +15,21 @@ public class ArrayEx11Result {
         }
         System.out.println(Arrays.toString(numArr));
 
-        for (int z = 0; z < LEN; z++) {
+        /* for (int z = 0; z < LEN; z++) {
             int val = numArr[z];
             cntArr[val]++;
 
-
         }
+        */
+        for (int n : numArr) {    //향상된 for 문을 사용 해서 같은 값을 도출
+            cntArr[n]++;
+        }
+
         System.out.println(Arrays.toString(cntArr));
         /*
-        numArr 각 방의 0~9 사이의 랜덤값을 대입한다 (중복 허용)
+        numArr 각 방의 0~9 사이의 랜덤값 을 대입 한다 (중복 허용)
         numArr 각 방의 값도 출력
-        cntArr의 0번 방은 0의 개수, 1번 방은 1의 개수 count 값을 넣는다.
+        cntArr 의 0번 방은 0의 개수, 1번 방은 1의 개수 count 값을 넣는다.
         0~9의 개수를 출력
         [4, 4, 4, 6, 5, 7, 9, 7, 5, 3]
         0의개수 : 0
