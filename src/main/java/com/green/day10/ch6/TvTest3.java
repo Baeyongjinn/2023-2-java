@@ -4,7 +4,7 @@ public class TvTest3 {
     public static void main(String[] args) {
         Tv tv1 = new Tv();
 
-        Tv tv2 = tv1;
+        Tv tv2 = tv1; //tv1의 주소값을 tv2에 복사
 
 
         System.out.printf("tv1.channel : %d\n", tv1.channel);

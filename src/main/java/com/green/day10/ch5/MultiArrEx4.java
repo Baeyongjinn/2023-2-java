@@ -25,7 +25,7 @@ public class MultiArrEx4 {
         for (int i = 0; i < words.length; i++) {
             String a = words[i][1];
             String msg = "틀렸습니다 " + "정답은 " + a + " 입니다";
-            System.out.printf("Q%d. %s의 뜻은? >> \n",i+1,words[i][0]);
+            System.out.printf("Q%d. %s의 뜻은? >> ",i+1,words[i][0]);
             String s = scan.next();
             if (a.equals(s)) {
                 msg = "정답입니다";
@@ -33,6 +33,7 @@ public class MultiArrEx4 {
 
                 System.out.println(msg);
             }
+        System.out.println("끝");
 
         }
     }

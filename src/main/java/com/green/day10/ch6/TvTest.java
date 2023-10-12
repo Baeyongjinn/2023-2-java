@@ -15,7 +15,7 @@ public class TvTest {
         tv2.channel = 20;
         // '.'  은 객체한테 접근을 할때 씀
 
-        System.out.println("tv1 == tv2 >> " + (tv1 == tv2));
+        System.out.println("tv1 == tv2 >> " + (tv1 == tv2)); //레퍼런스타입의 ==은 주소값 비교
 
         System.out.println("tv1.channel : " + tv1.channel);
         System.out.println("tv1.channel : " + tv1.power);
