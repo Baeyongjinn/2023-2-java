@@ -5,7 +5,7 @@ import com.green.day10.ch6.Tv;
 public class Method1Test {
     public static void main(String[] args) {
                 //new -> 객체생성 키워드
-        Method1 tv1 = new Method1(); //Tv 객체의 주소값 을 담을수 있는 변수 선언
+        Method1 tv1 = new Method1(); //Method1 객체의 주소값 을 담을수 있는 변수 선언
         tv1.channel = 10;
         tv1.power = true;
         tv1.color = "빨간색";
