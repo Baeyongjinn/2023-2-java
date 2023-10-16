@@ -20,7 +20,7 @@ public class PrimitiveParamEx {
 
     }
 
-    public static void change(int x) {
+    public static void change(int x) {                    //같은 이름의 객채를 만들수 있다.(오버로딩)
         x = 1000;
         System.out.printf("main() : x = %d\n", x);
     }

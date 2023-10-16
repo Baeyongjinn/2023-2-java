@@ -2,7 +2,7 @@ package com.green.day11.ch6;
 
 public class DiffPriRef {
     public static void main(String[] args) {
-        int num = 50;
+        int num = 30;
         changeVal(num);
         System.out.println("num : " + num);
 
@@ -15,7 +15,7 @@ public class DiffPriRef {
 
     }
 
-    public static void changeVal(int num) {              //파라미터 타입이 다르면 똑같은 이름의 메소드를 만들수있다.
+    public static void changeVal(int num) {              //파라미터 타입이 다르면 똑같은 이름의 메소드를 만들수 있다.(오버로딩)
         System.out.println("changeVal - int");
        num = 30;
 

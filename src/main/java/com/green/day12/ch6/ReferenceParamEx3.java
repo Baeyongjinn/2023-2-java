@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class ReferenceParamEx3 {
     public static void main(String[] args) {
         int[] arr = {3, 2, 1, 6, 5, 4};
-        printArr(arr);
-        System.out.println(Arrays.toString(arr));
+        printArr(arr); //[3, 2, 1, 6, 5, 4]
+        System.out.println(Arrays.toString(arr)); //[3, 2, 1, 6, 5, 4]
         sortArr(arr);
-        printArr(arr);
-        System.out.println(Arrays.toString(arr));
+        printArr(arr); //[1, 2, 3, 4, ,5 ,6]
+        System.out.println(Arrays.toString(arr)); //[1, 2, 3, 4, ,5 ,6]
 
         System.out.println("sum = " + sumArr(arr));
 
