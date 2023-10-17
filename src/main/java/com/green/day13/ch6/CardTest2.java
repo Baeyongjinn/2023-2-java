@@ -4,11 +4,11 @@ import com.green.day12.ch6.Card;
 
 public class CardTest2 {
     public static void main(String[] args) {
-        Card[] cards = makeCards();
+        Card[] cards = makeCards(); //static method , Card[]타입(return type)
         System.out.println(cards.length); //52
 
         for (Card c : cards) {
-            c.printYourSelf(); //Spade (A), Heart (2)
+            c.printYourSelf(); //Spade (A), Heart (2) // class Card에 있는 메소드.
         }
 
     }

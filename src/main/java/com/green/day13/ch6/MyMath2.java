@@ -10,12 +10,13 @@ public class MyMath2 {
     }
 
     static void staticAbs(int n) {
-        System.out.println(n < 0 ? -n: n);
+        System.out.println(n < 0 ? -n : n);
     }
 
     static void print() {
         System.out.printf("staticNum : %d\n", staticNum); //static 메소드는 인스턴스 변수를 사용할 수 없다.
     }
+
     void print2() {      // 가능한 메소드에 static을 붙이자.
         System.out.printf("\"staticNum : %d, num : %d\n", staticNum, num);
     }
