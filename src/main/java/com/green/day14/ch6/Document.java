@@ -1,19 +1,20 @@
 package com.green.day14.ch6;
 
 public class Document {
-    String name;
+    String name;                        //전역변수는 객체가 살아있는동안 값이 저장.
     static int cnt = 1;
 
 
 
     public Document() {
+
        this(String.format("제목없음%d",cnt++));
     }
 
 
 
     public Document(String name) {
-        this.name = name;
+        this.name = name;              //지역변수는 값이 초기화.
         System.out.printf("문서 %s가 생성되었습니다.\n", this.name);
 
     }

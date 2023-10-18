@@ -14,8 +14,8 @@ public class Car {
 
 
     }
-    public Car(String color,String gearType,int door) {
-        this.color = color;                   //이름이 같을떄 this.을 써야 한다(이름이 다르면 생략 가능)
+    public Car(String color,String gearType,int door) {   //Overloading 생성자
+        this.color = color;                              //이름이 같을떄 this.을 써야 한다(이름이 다르면 생략 가능)
         this.gearType = gearType;
         this.door = door;
     }
@@ -30,7 +30,7 @@ public class Car {
 class CarTest {
 
     public static void main(String[] args) {
-        Car car1 = new Car();
+        Car car1 = new Car();            //new ?? 은  ??생성자 호출
         Car car2 = new Car("blue");
 
         car1.printMySelf(); //color=white, gearType = auto, door = 4

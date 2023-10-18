@@ -10,7 +10,7 @@ public class Data1 {
         //value1 = 100;
         //value2 = 200;
         //value3 = 300;
-        this(100,200,300); //생성자 호출
+        this(100,200,300); //생성자 호출       //메소드에서는 생성자 호출불가능. new로 새로운 객체를 만들때는 사용가능.
     }
 
     public Data1(int a) { // 생성자도 Overloading 가능.

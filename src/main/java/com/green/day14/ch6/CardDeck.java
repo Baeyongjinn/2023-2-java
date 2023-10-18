@@ -2,7 +2,7 @@ package com.green.day14.ch6;
 
 
 public class CardDeck {
-    Card[] cards;
+    Card[] cards;  //Card[]의 주소값을 cards에 저장.
 
 
     public CardDeck() {
@@ -23,10 +23,14 @@ public class CardDeck {
 
     private String getNumberFromInt(int num) { //private는 같은 클래스 안에서만 사용가능.
         switch (num) {                         //외부에서 호출 불가.
-            case 1:  return "A";
-            case 11: return "J";
-            case 12: return "Q";
-            case 13: return "K";
+            case 1:
+                return "A";
+            case 11:
+                return "J";
+            case 12:
+                return "Q";
+            case 13:
+                return "K";
         }
         return String.valueOf(num);
     }
@@ -36,13 +40,14 @@ public class CardDeck {
             c.printMySelf();
         }
     }
+
     public Card getCard() {
         Card c = null;
         while (true) {
-            int rIdx = (int)(Math.random() * cards.length);
+            int rIdx = (int) (Math.random() * cards.length);
             c = cards[rIdx];
-            if(c != null){
-            cards[rIdx] = null;
+            if (c != null) {
+                cards[rIdx] = null;
                 break;
             }
         }
