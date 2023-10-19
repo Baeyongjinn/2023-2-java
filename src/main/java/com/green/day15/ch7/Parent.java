@@ -4,9 +4,9 @@ public class Parent extends Object {  //모든객체는 Object를 상속 받는�
     int age;
 }
 
-class Child extends Parent {
+class Child extends Parent { //자식의 맴버필드는 사용 불가.
     public Child() {
-        super();                  //super() 은 바로위 부모의 기본 생성자 호출
+        super();                  //super() 은 바로위 부모class의 기본 생성자 호출
     }
 
     void play() {

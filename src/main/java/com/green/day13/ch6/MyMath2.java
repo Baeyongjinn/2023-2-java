@@ -2,14 +2,14 @@ package com.green.day13.ch6;
 
 public class MyMath2 {
     int num; //맴버필드
-    static int staticNum; //static이 붙으면 다른 메모리 영역에 저장.
+    public static int staticNum; //static이 붙으면 다른 메모리 영역에 저장.
     //static이 붙으면 무조건 공간이 하나.
 
     void instanceAbs() { //메소드안에 인스턴스 변수를 쓰고있다면 static을 못쓴다.
         System.out.println(num < 0 ? -num : num);
     }
 
-    static void staticAbs(int n) {
+    public static void staticAbs(int n) {
         System.out.println(n < 0 ? -n : n);
     }
 
