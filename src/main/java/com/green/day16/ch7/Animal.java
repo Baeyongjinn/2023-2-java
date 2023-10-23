@@ -1,13 +1,13 @@
 package com.green.day16.ch7;
 
 public class Animal {
-    public void crying() {
-        System.out.println("동물이 운다.");
+    public void crying() {                                         //다형성
+        System.out.println("동물이 운다.");                         //1.상속관계에서만 나타남.
     }
 }
 
 class AnimalTest3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {  //instance를 사용하지 않는다면 static Method를 사용 할수 있다
         Animal ani = new Cat();
         System.out.println(ani instanceof Dog); // Dog에 Cat주소를 상속받고있지않아 false가 나온다
        // Dog dog = (Dog)ani;
@@ -36,7 +36,7 @@ class AnimalTest {
 
         Dog dog2 = new Bulldog();   // Dog와 Bulldog의 위치를 바꾸면 에러가 터짐(자식 타입은 부모 객체의 주소값을 담을수 없기때문)
         dog2.crying();    //Bulldog객체의 주소값을 담아서 불독객체의 crying메소드가 나온다. new 에 Dog class의 주소값을 넣으면 Dog에 있는 crying이 실행.
-    }
+    }                     //가장 빨리 만나는 Method호출
 }
 
 class AnimalTest2 {
@@ -46,11 +46,11 @@ class AnimalTest2 {
         Bulldog bulldog = new Bulldog();
 
         System.out.println(bulldog instanceof Dog); //instanceof : 형변환이 가능할때 ture 아닐시 false가 나온다
-        System.out.println(bulldog instanceof Bulldog);
+        System.out.println(bulldog instanceof Bulldog); //(A instanceof B)A는 주소값 B는 class가 와야함.
         System.out.println(bulldog instanceof Animal);
         Animal ani = bulldog;
         System.out.println(ani instanceof Cat); //false가 나옴으로 형변환이 불가능함
-        //Cat cat2 = (Cat)ani;   에러가 나옴
+        //Cat cat2 = (Cat)ani;  //에러가 나옴
 
         callCrying(dog);
         callCrying(cat);
@@ -59,7 +59,7 @@ class AnimalTest2 {
     private static void callCrying(Animal ani) {
         ani.crying();
         //bulldog인지 체크 > 맞으면 jump() 호출 아니면 아무것도 안함.
-        if(ani instanceof Bulldog) {         //(A instanceof B) A값을 B로 바꾸고 싶을때 ture면 가능 false는 불가능
+        if(ani instanceof Bulldog) {         //(A instanceof B) A타입을 B타입으로 바꾸고 싶을때 ture면 가능 false는 불가능
             Bulldog bulldog = (Bulldog)ani;
             bulldog.jump();
         }

@@ -1,6 +1,10 @@
 package com.green.day16.ch7;
 
+
 import static com.green.day13.ch6.MyMath2.staticAbs; //static 메소드를 쓰고싶을때 import 뒤에 static 입력.
+
+import static com.green.day13.ch6.MyMath2.staticAbs; //앞에 .을 안붙이고 static 메소드를 쓰고싶을때 import 뒤에 static 입력.
+
 import static com.green.day13.ch6.MyMath2.staticNum; //import를 하고싶을때는 그 메소드에 public이 붙어 있어야 한다.
 import com.green.day15.ch7.Parent;
 //패키지를 전부 다 쓰고 싶을때는  ex) com.green.day15.ch7.*;  뒤에 .*를 붙여주면 된다

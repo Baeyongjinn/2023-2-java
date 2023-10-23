@@ -14,8 +14,9 @@ public class Time {
         this.minute = minute;
         this.second = second;
     }
-
     //2. setter 메소드,변수 하나당 setter 메소드를 만들어 줘야함
+    //2. setter 메소드,변수 하나당 setter 메소드를 만들어 줘야함 , setter는 전부 void
+
     public void setHour(final int hour) {
         if(hour > MAX_HOUR) { this.hour = MAX_HOUR; return; }
         if(hour < MIN_HOUR) { this.hour = MIN_HOUR; return; }
@@ -28,6 +29,8 @@ public class Time {
         this.second = second;
     }
 
+    //private메소드에 값을 빼는 방법.
+    //1. getter Method를 이용해 값을 뺌, 변수 하나당 getter Method를 만들어 줘야함.
     public int getHour() {
         return this.hour;
     }
