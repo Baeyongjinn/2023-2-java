@@ -25,6 +25,8 @@ class PolyArgumentTestVer2_3 {
         buyer.buy(new Tv2());
         buyer.buy(new Tv2());
         buyer.buy(new Tv2());
+        buyer.buy(new Tv2());
+        buyer.buy((new Audio2()));
         buyer.buy((new Audio2()));
 
         //System.out.printf("남은 금액: %d\n", buyer.money);
@@ -39,7 +41,7 @@ class PolyArgumentTestVer2_3 {
         buyer.summary();//총 구매금액: ??
 
     }
-    }
+}
 
 class Buyer2 {
     //money(정수) 저장 가능
@@ -48,23 +50,20 @@ class Buyer2 {
     private int money;
     private int bonusPoint;
     private Product2[] productArr;
-    private int money2;
-
+    private int total;
 
 
     public Buyer2() {
         this.money = 1000;
         this.bonusPoint = 0;
         this.productArr = new Product2[10];
-        this.money2 = 0 ;
+        this.total = 0;
 
 
     }
-
     public void summary() {
-        money2 = bonusPoint * 10;
-        System.out.printf("총 구매금액: %d, 남은금액: %d, 보너스 포인트 : %d\n",money2,money,bonusPoint);
-
+        total = bonusPoint * 10;
+        System.out.printf("총 구매금액: %d, 남은금액: %d, 보너스 포인트 : %d\n", total, money, bonusPoint);
     }
 
     int i = 0;

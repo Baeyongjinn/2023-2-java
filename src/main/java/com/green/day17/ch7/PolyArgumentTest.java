@@ -36,15 +36,7 @@ class Buyer extends Tv {
     public Buyer() {
         this.money = 1000;
         this.bonusPoint = 0;
-
     }
-
-    @Override
-    public String toString() {
-        return String.format("money: %d, bonusPoint: %d", money, bonusPoint);
-
-    }
-
     public void buy(Product product) {
         if (product.getPrice() > this.money) {
             System.out.println("잔액부족");
@@ -54,6 +46,11 @@ class Buyer extends Tv {
         this.bonusPoint += product.getBonusPoint();
         System.out.printf("%s을/를 구입하셨습니다.\n", product);
     }
+    @Override
+    public String toString() {
+        return String.format("money: %d, bonusPoint: %d", money, bonusPoint);
+
+    }
 }
 
 
@@ -61,7 +58,7 @@ class Product {
     private int price;
     private int bonusPoint;
 
-    protected Product(int price) {
+    protected Product(int price) {             //생성자는 객체생성할때 딱 한번만 호출.
         this.price = price;
         bonusPoint = (int) (price * 0.1);
     }
@@ -81,7 +78,7 @@ class Product {
 }
 
 
-class Tv extends Product {
+class Tv extends Product {                    //생성자를 호출시 빨간줄이 뜨면 값을 넣거나
     public Tv() {
         super(100);
     }
