@@ -31,7 +31,7 @@ public class ArrayListTest {
 
 class ArrayListTest2 {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList(); //<>안에 기본형은 적을수 없다. 래퍼클래스만 가능. Integer타입을 넣어 정수만 입력가능.
+        List<Integer> list = new ArrayList<>(); //<>안에 기본형(primitive)은 적을수 없다. 래퍼클래스만(기본형의 객체형) 가능. <Integer>를 입력 하면 정수만 입력 가능.
         list.add(10);             //void Method처럼 쓰인다.
         list.add(20);
         list.add(30);
@@ -74,7 +74,7 @@ class ArrayListTest3 {
         System.out.println(list);
         list.add(3,200);
         System.out.println(list);
-        list.remove(0); //지우는 메소드
+        list.remove(0); //지우는 메소드 ,지우고 싶은 배열 방 번호 적음.
         System.out.println(list);
 
     }

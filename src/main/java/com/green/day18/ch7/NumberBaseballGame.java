@@ -57,7 +57,7 @@ class NumberBaseball {
         }
         out = GAME_COUNT - (strike + ball);
         System.out.printf("strike : %d, ball : %d, out : %d\n",strike,ball,out);
-        return true;
+        return false;
     }
 
     private void setRandomNumNotDuplicate() {

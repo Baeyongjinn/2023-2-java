@@ -24,8 +24,8 @@ public class MyArrayList {
         for (int i = 0; i < idx; i++) {
             tmp[i] = arr[i];
         }
-        for (int i = idx;i<arr.length;i++) {
-            tmp[i+1] = arr[i];
+        for (int i = idx; i < arr.length; i++) {
+            tmp[i + 1] = arr[i];
         }
         arr = tmp;
     }

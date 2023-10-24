@@ -19,7 +19,7 @@ public class HashMapTest {
 
 class HashMapTest2 {
     public static void main(String[] args) {
-        Map<String,Integer> map = new HashMap<>();
+        Map<String,Integer> map = new HashMap<>(); //<KEY,Value> 왼쪽 래퍼클래스 타입은 Key,오른쪽은 Value에 들어갈 타입.
         map.put("Tv",0);
         map.put("Computer",0);
         map.put("Audio",0);
