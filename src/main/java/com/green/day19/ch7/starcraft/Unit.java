@@ -94,7 +94,7 @@ class Tank extends Unit {
     //siegeMode = true; 들어가야되고 콘솔에는 "시즈모드가 되었습니다."
     //siegeMode = true; 는 시즈모드가 된거다.
     public void changeMode2() {
-        siegeMode = !siegeMode;
+        siegeMode = !siegeMode;  //토글 이용
         System.out.println(siegeMode
                 ? "시즈모드가 되었습니다." : "시즈모드가 풀렸습니다.");
     }
