@@ -10,6 +10,7 @@ public class Test4 {
         여자  'nice'
          */
         Scanner s =new Scanner(System.in);
+
         System.out.print("성별을 입력하세요 > ");
         String gender = s.nextLine();
 

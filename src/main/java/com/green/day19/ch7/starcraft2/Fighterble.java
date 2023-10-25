@@ -1,6 +1,6 @@
 package com.green.day19.ch7.starcraft2;
 
-//interface는 다중상속 가능.   //같은 interface 끼리는 extends 사용.
+//interface는 다중상속 가능.구현부가 없어서 가능.   //같은 interface 끼리는 extends 사용.
 public interface Fighterble extends Movable,Attackable {}
 
 interface Movable { void move(int x, int y); }

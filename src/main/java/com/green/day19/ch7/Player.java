@@ -13,7 +13,7 @@ class PlayerTest {
         player.play(40);
     }
 }
-
+//추상클래스는 다중상속 X
 public abstract class Player { //클래스 밑에 abstract(추상 메소드) 메소드가 하나라도 있다면 클래스도 abstract(추상 클래스)이 무조건 붙어야 한다.
     public abstract void play(int pos); //추상 클래스를 상속 받으면 추상 메소드를 무조건 Override 해야한다.
 }                                   // 추상 클래스는 구현부가 없다.
@@ -21,7 +21,7 @@ public abstract class Player { //클래스 밑에 abstract(추상 메소드) 메
 
 class AudioPlayer extends Player {
 
-    @Override
+    @Override       //@명칭 에노테이션이라고 부름.
     public void play(int pos) {
         System.out.println("Audio play 위치 : " + pos);
     }

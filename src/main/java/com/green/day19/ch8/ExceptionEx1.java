@@ -4,7 +4,7 @@ public class ExceptionEx1 {
     public static void main(String[] args) {
         int num = 0;
         //num = num / 0;
-        try {                 //try의 코드에 예외가 발생되면 catch가 실행.
+        try {                 //try{}안에 예외가 발생되면 catch가 실행.
             num = 10;
             num = num / 0;
         } catch (Exception e) {
@@ -52,7 +52,7 @@ class ExceptionEx1_3 {
             // obj.sum();
             int[] arr = new int[10];
             arr[10] = 10;
-        } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+        } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {  //가장 빨리 만나는걸 잡는다.
             System.out.println("수학적 예외");
         } catch (NullPointerException e) {
             System.out.println("널포인트 예외");
