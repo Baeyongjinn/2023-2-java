@@ -12,9 +12,7 @@ public class BoardEntity {
         return iboard;
     }
 
-    public void setIboard(int iboard) {
-        this.iboard = iboard;
-    }
+    public void setIboard(int iboard) { this.iboard = iboard; }
 
     public String getTitle() {
         return title;
@@ -56,5 +54,11 @@ public class BoardEntity {
         this.updatedAT = updatedAT;
     }
 
+
+    @Override
+    public String toString() {
+     return String.format("iboard: %d, title: %s, ctnts: %s, writer: %s, createdAt: %s, updatedAt: %s"
+             ,iboard,title,ctnts,writer,createdAT,updatedAT );
+    }
 
 }
