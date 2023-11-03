@@ -11,9 +11,16 @@ import java.util.List;
 public class BoardDao {
     public static int insBoard(BoardEntity entity) {
         int result = 0;
+        /*
         String sql = "INSERT INTO board(title,ctnts,writer)" +
                 "VALUES" +
                 "(?, ?, ?) ";
+
+         */
+        String sql = "INSERT INTO board " +               //UPDATE문 처럼 SET을 쓸수도 있다.
+                "SET title = ? " +
+                ", ctnts = ? " +
+                ", writer = ? ";
 
         System.out.println(sql);
         Connection con = null;
