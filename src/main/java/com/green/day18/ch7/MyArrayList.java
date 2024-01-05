@@ -1,8 +1,17 @@
 package com.green.day18.ch7;
 
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+
 public class MyArrayList {
     private int[] arr;
+
+    private int[] getArr() {
+        return arr;
+    }
 
     public MyArrayList() {
         arr = new int[0];
@@ -43,19 +52,53 @@ public class MyArrayList {
         r += "]";
         return r;
     }
-}
 
-class MyArrayListTest {
-    public static void main(String[] args) {
-        MyArrayList list = new MyArrayList();
-        list.add(10); // 0: 10
-        list.add(20); // 1: 20;
-        list.add(30);
-        System.out.println(list); // [[10, 20, 30]
-        list.add(1, 40);
-        System.out.println(list);
+    public void forEach(Consumer<Integer> con) {
+        for (int i = 0; i < arr.length; i++) {
+            con.accept(arr[i]);
+        }
+    }
+
+    public void removeIf(Predicate<Integer> pre) {
+        int[] temp = new int[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (!pre.test(arr[i])) {
+                int[] temp2 = new int[temp.length + 1];
+
+                for (int z = 0; z < temp.length; z++) {
+                    temp2[z] = temp[z];
+                }
+
+                temp2[temp.length] = arr[i];
+                temp = temp2;
+            }
+            arr = temp;
+        }
+    }
+
+    public void removeIf2(Predicate<Integer> pre) {
+        MyArrayList tempList = new MyArrayList();
+        for (int i = 0; i < arr.length; i++) {
+            if (!pre.test(arr[i])) {
+                tempList.add(arr[i]);
+            }
+        }
+        this.arr = tempList.getArr();
+    }
 
 
+    class MyArrayListTest {
+        public static void main(String[] args) {
+            MyArrayList list = new MyArrayList();
+            list.add(10); // 0: 10
+            list.add(20); // 1: 20;
+            list.add(30);
+            System.out.println(list); // [[10, 20, 30]
+            list.add(1, 40);
+            System.out.println(list);
+
+
+        }
     }
 }
 
