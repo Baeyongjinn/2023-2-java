@@ -12,7 +12,7 @@ public class FruitBoxEx2 {
     }
 }
 
-class FruitBox<T> extends GBoxList<T> {
+class FruitBox<T extends Fruit> extends GBoxList<T> {
     List<T> getList() {
         return list;
     }
